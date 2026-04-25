@@ -3,48 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movie-theater-</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>StarLight Cinema - Movie Theater</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <!-- Navabr section -->
+
+<header>
+    <h1 class="logo">StarLight Cinema</h1>
+
     <nav>
-        <div class="logo">StarLightMovie</div>
-        <ul class="nav-links">
-            <li><a href="#">Now Showing</a></li>
-            <li><a href="#">Comming Soon</a></li>
-            <li><a href="#">Tickets</a></li>
-            <li><a href="#">Location</a></li>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#movies">Now Showing</a></li>       
+            <li><a href="#about">About</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
-         <div class="btns">
-            <a href="#">
-                <button class="btn">Book Tickets</button>
-            </a>
-         </div>
     </nav>
-    <div class="container">
-        <img src="" alt="" />
-        <div class="text-on-photo">
-        <h1>Welcom to StarLightMovie </h1>
-        <h3>Here we are to provide the newes movie</h3>
-         <div class="btns">
-            <a href="#">
-                <button class="btn">Explor Movie</button>
-            </a>
-         </div>
+
+    <div class="btns">
+        <a href="#ticketModal" class="btn">Book Tickets</a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="container" id="hero">
+    <img src="./img/cinema.jpg" alt="Cinema hall background" />
+    
+    <div class="text-on-photo">
+        <h1>Welcome to StarLight Cinema</h1>
+        <h3>Enjoy the latest movies with us</h3>
+
+        <div class="btns">
+            <a href="#movies" class="btn">Explore Movies</a>
         </div>
     </div>
+</section>
 
-   <section class="Newest">
+<!-- Movies -->
+<section id="movies">
+    <h2>Now Showing</h2>
+
+    <div class="movies">
+
         <div class="card">
-
+            <img src="./img/me before you2.jpg" alt="Movie 1">
+            <div class="card-content">
+                <h3>Me Before You</h3>
+                <p>Genre: Romance</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
         </div>
-    </section>
+
+        <div class="card">
+            <img src="./img/patmavaat.jpg" alt="Movie 2">
+            <div class="card-content">
+                <h3>Padmaavat</h3>
+                <p>Genre: Romance</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/intrestallar.jpg" alt="Movie 3">
+            <div class="card-content">
+                <h3>Interstellar</h3>
+                <p>Genre: Science fiction</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
+        </div>
+
+                <div class="card">
+            <img src="./img/little women.jpeg" alt="Movie 3">
+            <div class="card-content">
+                <h3>little Women</h3>
+                <p>Genre: Storical</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
+        </div>
 
 
+            <div class="card">
+            <img src="./img/bajerao mastani.jpg" alt="Movie 3">
+            <div class="card-content">
+                <h3>Bajrao mastani</h3>
+                <p>Genre: Romance</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
+        </div>
 
-    
 
+                <div class="card">
+            <img src="./img/pride and prejudice.jpg" alt="Movie 3">
+            <div class="card-content">
+                <h3>Pride & Prejudaice</h3>
+                <p>Genre: Science fiction</p>
+                <a href="#ticketModal" class="btn">Buy Ticket</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>StarLight Cinema is a modern theater offering the best movie experience with high-quality sound and comfortable seating.</p>
+    <p>Location: Kabul Afghanistan, Taimani Project Street</p>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>© 2026 StarLight Cinema</p>
+    <p>
+        Follow us on 
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a> | 
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a> | 
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </p>
+</footer>
+<!-- Modal for booking tickets -->
+<div id="ticketModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+
+        <h2>Book Your Ticket</h2>
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+
+            <select required>
+                <option value="">Select Day</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+
+            <button type="submit" class="btn">Save</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
